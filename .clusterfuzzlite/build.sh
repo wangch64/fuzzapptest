@@ -15,7 +15,7 @@
 #
 ################################################################################
 
-cd new-api-repo
+cd new-git-repo
 make clean  # Not strictly necessary, since we are building in a fresh dir.
 make -j$(nproc) all    # Build the fuzz targets.
 make -j$(nproc) check  # Sanity check, not strictly required, but nice to have.
